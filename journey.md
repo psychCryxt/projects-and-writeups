@@ -10,3 +10,4 @@ A running timeline of the road so far. Newest at the bottom, because that is how
 - **Jul 2026:** TryHackMe SOC Level 1 path completed.
 - **Fall 2026:** Started at Wentworth Institute of Technology, B.S. in Cybersecurity, after transferring from Anna Maria College.
 - **Nov 10, 2026:** Started this journal with my first two write-ups.
+- **Nov 11, 2026:** Put my home Nextcloud behind real HTTPS on my tailnet with Tailscale Serve, fixing the phone app's insecure-connection warning, and wrote it up the same day.
