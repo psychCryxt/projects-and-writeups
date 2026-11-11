@@ -24,7 +24,7 @@ Tailscale now accepts HTTPS on port 443 (tailnet only), handles the certificate,
 
 The honest wrinkle: my first attempt failed. Run as my normal user, Tailscale answered "serve config denied" and told me to use sudo (or set myself as the operator once with `tailscale set --operator=$USER`). Even the first sudo attempt failed on a mistyped password. Real sessions, again.
 
-![The full session: the denied first attempt, then Serve coming up, then the Nextcloud config (server name and addresses redacted)](images/01-nextcloud-serve-session.png)
+![The full session: the denied first attempt, then Serve coming up, then the Nextcloud config (server name and addresses redacted)](images/Watermarked%20Nextcloud%20screenshot.png)
 
 ## Problem 3: Nextcloud would reject or misbehave behind the new address
 
