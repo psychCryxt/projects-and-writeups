@@ -12,3 +12,4 @@ A running timeline of the road so far. Newest at the bottom, because that is how
 - **Nov 10, 2026:** Started this journal with my first two write-ups.
 - **Nov 11, 2026:** Put my home Nextcloud behind real HTTPS on my tailnet with Tailscale Serve, fixing the phone app's insecure-connection warning, and wrote it up the same day.
 - **Nov 11, 2026 (evening):** Installed Wazuh 4.14.10 on the Mac mini and turned the homelab into a three-machine security lab: the mini defends, a Dell Latitude (Kali install still to finish after a GRUB failure forced a drive wipe) will attack, and my EliteBook watches the dashboard. Documented as the journal's first project entry.
+- **Nov 12, 2026:** Enrolled the first Wazuh agent: my EliteBook, over Tailscale. It only worked after I found and fixed a stale manager address left in the agent's config by an earlier install attempt. The viewing seat is now an endpoint too. The mini's own agent is next.

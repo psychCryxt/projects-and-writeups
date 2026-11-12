@@ -18,8 +18,9 @@ a monitored endpoint too.
 
 **HP EliteBook (Windows): my personal machine, the viewing seat**
 My daily driver. It reaches the Wazuh dashboard in a browser and
-SSHes into the server. Later I may add the Windows agent so this
-machine is monitored as well.
+SSHes into the server. Since Nov 12, 2026 it also runs the Windows
+agent, so the viewing seat is a monitored endpoint too: the first
+agent enrolled in the lab.
 
 **Dell Latitude: the attacker machine (in progress)**
 Reserved for Kali Linux. The first install died at the GRUB boot
@@ -53,11 +54,22 @@ Nextcloud app, talking to the server on its HTTPS tailnet address.
 
 ## Where it stands
 
-The Wazuh stack is up and the dashboard is live. It already shows the
-manager's own alerts, but no agents are registered yet. Next steps, in
-order: deploy the agent on the mini itself, finish the Kali install on
-the Dell, then attack the mini from the Dell and go find the attack in
-the dashboard from the EliteBook. Red team on one side of the room,
-blue team on the other, and I am both.
+The Wazuh stack is up and the dashboard is live. First agent enrolled
+Nov 12, 2026: this EliteBook, connected to the manager over Tailscale.
+
+Enrolling it taught me something reinstalling never would have: the
+agent did not show up at first, and the cause was a leftover. An
+earlier install attempt had written a different manager address into
+the agent's config file, and reinstalling the agent did not overwrite
+an existing config. The fix was to stop the service, correct the
+address inside ossec.conf, delete the client.keys file so the agent
+had to re-enroll, and start the service again. Lesson filed under:
+when software "should" work, check what address it is actually using,
+not the one you told it to use.
+
+Next steps, in order: deploy the agent on the mini itself, finish the
+Kali install on the Dell, then attack the mini from the Dell and go
+find the attack in the dashboard from the EliteBook. Red team on one
+side of the room, blue team on the other, and I am both.
 
 ![The Wazuh dashboard, live on its first night](../writeups/images/01-wazuh-dashboard.png)
