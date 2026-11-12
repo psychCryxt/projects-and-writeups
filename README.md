@@ -1,6 +1,6 @@
 # Projects, Labs and Write-ups
 
-I am Stephen Jude (online I go by **psychCryxt**), a Cybersecurity student at Wentworth Institute of Technology in Boston. This repo is my journal: the problems I run into, the labs I work through, and the projects I build, written up as they happen, with screenshots, so the record is real and not reconstructed later.
+I am Stephen (online I go by **psychCryxt**), a Cybersecurity student in Boston. This repo is my journal: the problems I run into, the labs I work through, and the projects I build, written up as they happen, with screenshots, so the record is real and not reconstructed later.
 
 Everything here follows one rule: I only post what I actually did. If a step failed before it worked, the failure is in the write-up too, because that is usually the part that teaches the most. Personal details (IP addresses, device addresses and similar) are redacted before anything goes up.
 
