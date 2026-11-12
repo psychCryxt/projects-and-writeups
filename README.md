@@ -18,7 +18,9 @@ Structured learning, written up lab by lab: PortSwigger Web Security Academy, Tr
 
 ## Projects
 
-Bigger documented builds, each in its own subfolder under [projects](projects/). First up will be my home lab (Nextcloud and Pi-hole running over Tailscale on a Raspberry Pi and an Ubuntu machine).
+Bigger documented builds, under [projects](projects/).
+
+- **Nov 11, 2026:** [My Homelab: A Three-Machine Security Lab](projects/homelab-architecture.md). The full setup: a Mac mini base server running Nextcloud and, as of tonight, a Wazuh SIEM; a Dell Latitude being built as a Kali attacker machine; my EliteBook as the viewing seat. One machine defends, one attacks, one watches.
 
 ## Journey
 
