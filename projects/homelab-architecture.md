@@ -13,8 +13,10 @@ machine that defends, one that attacks, and one that watches.
 Always on. It runs my Docker stack, including Nextcloud, served over
 HTTPS on my tailnet through Tailscale Serve. Since Nov 11, 2026 it
 also runs the full Wazuh stack: manager, indexer and dashboard. In
-Wazuh terms it is the manager, and once I deploy its agent it becomes
-a monitored endpoint too.
+Wazuh terms it is the manager, and it is also agent 000: Wazuh
+monitors its own server automatically, something I only learned when
+I tried to enroll the mini by hand and got an already-exists error.
+That self-monitoring is where the first night's alerts came from.
 
 **HP EliteBook (Windows): my personal machine, the viewing seat**
 My daily driver. It reaches the Wazuh dashboard in a browser and
@@ -67,9 +69,9 @@ had to re-enroll, and start the service again. Lesson filed under:
 when software "should" work, check what address it is actually using,
 not the one you told it to use.
 
-Next steps, in order: deploy the agent on the mini itself, finish the
-Kali install on the Dell, then attack the mini from the Dell and go
-find the attack in the dashboard from the EliteBook. Red team on one
-side of the room, blue team on the other, and I am both.
+Next step: finish the Kali install on the Dell, then attack the mini
+from the Dell and go find the attack in the dashboard from the
+EliteBook. Red team on one side of the room, blue team on the other,
+and I am both.
 
 ![The Wazuh dashboard, live on its first night](../writeups/images/01-wazuh-dashboard.png)
